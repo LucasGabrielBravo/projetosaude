@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Saúde</title>    
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="assets/ico-home.svg"/></a></li>                    
+                    <li><a href="mensagens.html"><img src="assets/ico-email.svg"/></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="formulario">
+            <form onsubmit="handleSubmit('contatoHealtHost')">
+                <legend>Contato HealtHost</legend>
+                                
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="nome" required minlength="4" maxlength="255">
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="email@mail.com" required minlength="4" maxlength="255">
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco" id="endereco" placeholder="UF, Municipio, Bairro, Rua, Nº" required minlength="4" maxlength="255">
+
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx" required minlength="4" maxlength="255">
+
+                <label for="horario">Melhor horario para entrar em contato:</label>
+                <input type="time" name="horario" id="horario" placeholder="horario" value="12:00" required>
+
+                <label for="pergunta">Pergunta/Interesse</label>
+                <textarea name="pergunta" id="pergunta" minlength="4" maxlength="1024" placeholder="Escreva aqui o que voce deseja"></textarea>
+
+                <button class="btn" type="submit">Enviar</button>
+                <a class="btn-2" href="index.html">Voltar</a>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

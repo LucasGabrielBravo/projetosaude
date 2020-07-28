@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Saúde</title>    
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="assets/ico-home.svg"/></a></li>                    
+                    <li><a href="mensagens.html"><img src="assets/ico-email.svg"/></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="formulario">
+            <form onsubmit="handleLogin()">
+                <legend>Mensagens Recebidas</legend>
+                                
+                <label for="login">Login:</label>
+                <input type="text" name="login" id="login" placeholder="login: admin" required minlength="4" maxlength="255">
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="senha: admin" required minlength="4" maxlength="255">
+
+                <button class="btn" type="submit">Entrar</button>
+                <a class="btn-2" href="index.html">Voltar</a>
+            </form>
+            <div class="mensagens">
+
+            </div>
+        </main>        
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
